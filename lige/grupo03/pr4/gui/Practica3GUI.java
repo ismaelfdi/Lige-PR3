@@ -18,19 +18,16 @@ public class Practica3GUI extends JFrame{
 		
 		this.setLayout(new BorderLayout());
 		
-		JButton boton3;
-		boton3 = new JButton("Tercer Boton");
-		
 		PanelAcciones p1 = new PanelAcciones();
 		PanelInformacionJugador p2 = new PanelInformacionJugador();
 		PanelMapa mapa = new PanelMapa();
+		PanelHabitacion habitacion = new PanelHabitacion();
 		
 		JSplitPane jspControl = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, p1, p2);
 		
-		
 		this.add(jspControl,BorderLayout.NORTH);
 		this.add(mapa,BorderLayout.CENTER);
-		this.add(boton3,BorderLayout.SOUTH);
+		this.add(habitacion,BorderLayout.SOUTH);
 		
 		JMenuBar bar = new JMenuBar();
 		
